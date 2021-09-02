@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Merriweather", serif;
+  max-width: 140rem;
+  margin: auto; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+.container {
+  flex-direction: column;
+  padding: 2rem 0; }
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  width: 15%;
+  height: 5rem;
+  font-family: inherit;
+  transition: transform 0.3s ease;
+  color: #fff; }
+  @media only screen and (max-width: 50em) {
+    .btn {
+      width: 50%; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn {
+      width: 80%; } }
+  .btn:hover {
+    transform: translateY(-3%); }
+
+.btn-add {
+  background-color: #45c545; }
+
+.btn-delete {
+  width: 15rem;
+  background-color: #dd1b1b; }
+
+.error {
+  font-size: 2.2rem;
+  color: #dd1b1b;
+  margin: 1rem; }
+
+.modal-box {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.box {
+  flex-basis: 20%;
+  height: 15rem;
+  margin: 0.5rem;
+  border: 0.18rem solid #333;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5rem;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 62.5em) {
+    .box {
+      flex-basis: 30%; } }
+  @media only screen and (max-width: 50em) {
+    .box {
+      flex-basis: 40%; } }
+  @media only screen and (max-width: 31.25em) {
+    .box {
+      flex-basis: 100%; } }
+  .box span {
+    display: block;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.1rem;
+    margin: 0.5rem 0; }
+
+.add-modal {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333;
+  z-index: 100; }
+
+.modal-input {
+  width: 100%;
+  margin: 2rem 0; }
+  .modal-input form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    @media only screen and (max-width: 50em) {
+      .modal-input form {
+        flex-direction: column; } }
+  .modal-input input {
+    height: 5rem;
+    width: 70%;
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    font-family: inherit;
+    margin: 1rem;
+    text-align: center; }
+    @media only screen and (max-width: 50em) {
+      .modal-input input {
+        width: 80%;
+        margin: 0.5rem; } }
+  .modal-input input[type='time'] {
+    width: 10%; }
+    @media only screen and (max-width: 50em) {
+      .modal-input input[type='time'] {
+        width: 50%; } }
+    @media only screen and (max-width: 31.25em) {
+      .modal-input input[type='time'] {
+        width: 80%; } }
+
+.hide-me {
+  opacity: 0;
+  display: none; }
+
+.box-shake {
+  animation: shake 1s infinite;
+  border: 0.15rem solid #dd1b1b; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
